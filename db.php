@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/Product.php';
+require __DIR__ . '/Models/Product.php';
 
 
 

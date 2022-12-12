@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/User.php';
+require __DIR__ . '/Models/User.php';
 
 
 

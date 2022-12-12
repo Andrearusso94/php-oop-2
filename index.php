@@ -8,8 +8,8 @@ Stampiamo delle card contenenti i dettagli dei prodotti,
  come immagine, titolo, prezzo, icona della categoria ed il tipo di articolo che si sta visualizzando 
  (prodotto, cibo, gioco, cuccia).
 */
-require __DIR__ . '/Models/db.php';
-require __DIR__ . '/Models/Membership.php';
+require __DIR__ . '/db.php';
+require __DIR__ . '/Membership.php';
 
 
 ?>
@@ -30,6 +30,7 @@ require __DIR__ . '/Models/Membership.php';
 <body class="bg-secondary">
     <header>
         <!-- place navbar here -->
+        <h1 class="text-center py-5">ArcaPlanet Andrea-Russo</h1>
     </header>
     <main>
         <div class="container d-flex">
@@ -47,7 +48,7 @@ require __DIR__ . '/Models/Membership.php';
                             <li class="list-group-item"><?= $product->categories->name ?></li>
                             <li class="list-group-item"><?= $product->price ?>€</li>
                             <?php foreach ($users as $user) : ?>
-                                <li class="list-group-item"><strong><?= $user->get_fullname() ?></strong> Hai diritto al <?= $user->discount ?> di sconto</li>
+                                <li class="list-group-item"><strong><?= $user->get_fullname() ?></strong> Hai diritto al <?= $user->discount ?> % di sconto</li>
                                 </li>
                             <?php endforeach; ?>
                         </ul>

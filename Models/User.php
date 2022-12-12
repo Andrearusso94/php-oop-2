@@ -8,7 +8,7 @@ class User
 
         $this->name = $name;
         $this->lastname = $lastname;
-        $this->discount = "20%";
+        $this->discount = 20;
     }
 
     function get_fullname()
