@@ -9,6 +9,7 @@ Stampiamo delle card contenenti i dettagli dei prodotti,
  (prodotto, cibo, gioco, cuccia).
 */
 require __DIR__ . '/Models/db.php';
+require __DIR__ . '/Models/Membership.php';
 
 
 ?>
@@ -44,7 +45,7 @@ require __DIR__ . '/Models/db.php';
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><?= $product->categories->name ?></li>
-                            <li class="list-group-item"><?= $product->price ?></li>
+                            <li class="list-group-item"><?= $product->price ?>€</li>
 
                         </ul>
 
