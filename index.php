@@ -46,7 +46,10 @@ require __DIR__ . '/Models/Membership.php';
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item"><?= $product->categories->name ?></li>
                             <li class="list-group-item"><?= $product->price ?>€</li>
-
+                            <?php foreach ($users as $user) : ?>
+                                <li class="list-group-item"><strong><?= $user->get_fullname() ?></strong> Hai diritto al <?= $user->discount ?> di sconto</li>
+                                </li>
+                            <?php endforeach; ?>
                         </ul>
 
 

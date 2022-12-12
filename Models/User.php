@@ -10,4 +10,9 @@ class User
         $this->lastname = $lastname;
         $this->discount = "20%";
     }
+
+    function get_fullname()
+    {
+        return "$this->name $this->lastname";
+    }
 }
