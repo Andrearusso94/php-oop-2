@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/Categories.php';
-require_once __DIR__ . '/Type.php';
+require __DIR__ . '/Categories.php';
+require __DIR__ . '/Type.php';
 
 class Product
 {
@@ -13,6 +13,3 @@ class Product
         $this->image = $image;
     }
 }
-
-$product_1 = new Product('Croccantini', new Type(new EatType('Cibo per cani', 'Manzo')), 25, new Categories('Cane'), 'urlimg');
-var_dump($product_1);
